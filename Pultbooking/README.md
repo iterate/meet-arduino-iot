@@ -14,6 +14,16 @@ $ screen -XS 13337 quit
 $ screen /dev/tty.USBtoUARTabsdasd
 ```
 
+Dersom du opplever problemer med flashing relatert til Python, naviger til: /Users/username/Library/Arduino15/packages/esp8266/hardware/esp8266/2.7.4/tools/pyserial/serial/tools/list_ports_osx.py
+
+på linje 30, bytt ut følgende linjer: 
+```
+#iokit = ctypes.cdll.LoadLibrary(ctypes.util.find_library('IOKit'))
+#cf = ctypes.cdll.LoadLibrary(ctypes.util.find_library('CoreFoundation'))
+iokit = ctypes.cdll.LoadLibrary('/System/Library/Frameworks/IOKit.framework/IOKit')
+cf = ctypes.cdll.LoadLibrary('/System/Library/Frameworks/CoreFoundation.framework/CoreFoundation')
+```
+
 Legg til dette i Arduno IDE - Preferences - Additional Boards Manager URLs: http://arduino.esp8266.com/stable/package_esp8266com_index.json
 
 For å endre på splash-image: /Arduino/libraries/Adafruit_SSD1306/splash.h
