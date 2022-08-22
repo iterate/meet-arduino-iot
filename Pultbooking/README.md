@@ -25,6 +25,7 @@ cf = ctypes.cdll.LoadLibrary('/System/Library/Frameworks/CoreFoundation.framewor
 ```
 
 Legg til dette i Arduno IDE - Preferences - Additional Boards Manager URLs: http://arduino.esp8266.com/stable/package_esp8266com_index.json
+
 I Library Manager, installer følgende: Adafruit GFX Library, Adafruit SSD1306, Adafruit BusIO, og muligens et ESP8266 Library
 
 For å endre på splash-image: /Arduino/libraries/Adafruit_SSD1306/splash.h
