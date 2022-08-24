@@ -66,7 +66,7 @@ uint8_t atou8(const char *s)
       return v;
 }
 
-const char * headerKeys[] = {"x-api-key: XtCmKi8obdXfXu8Prjq4wPVfowaKFZCf"};
+const char * headerKeys[] = {"x-api-key: asdasdasd"};
 const size_t numberOfHeaders = 1;
 
 void setup() {
